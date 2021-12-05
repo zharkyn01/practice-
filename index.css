@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root{
+    --dark-color:#333;
+    --light-color:#f4f4f4;
+    --blue-color: #2790d4;
+}
+/*Global setting*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+ul{
+    list-style: none;
+}
+p{
+    padding:1em 0;
+}
+h1,h2,h3{
+    padding:1em 0; 
+}
+body{
+    background-color: var(--dark-color);
+    font-size: 1.1em;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    line-height:1.5;
+}
+    .bg-dark{
+        background-color: var(--dark-color);
+        color: var(--light-color);
+    }
+    .bg-light{
+        background-color: var(--light-color);
+        color: var(--dark-color);
+    } 
+    .bg-blue{
+        background-color: var(--blue-color);
+        color: var(--light-color); 
+    }
+    .flex{
+        display:flex;
+    }
+    /*Header Showcase Style*/
+.showcase{
+    height:450px;
+    color:#fff;
+    text-align: center;
+}
+.bg-image{
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    background: var(--dark-color) url(https://learn.seytech.co/assets/projects/html-css/images/agency/code-screen.png
+    );
+    height:500px;
+    background-size: cover;
+    background-position:center;
+    opacity: 0.6;  
+}
+.showcase h1{
+    padding: 100px 0 0;
+
+}
+.btn{
+    display: inline-block;
+    padding: 16px 30px;
+    border: 1px solid #666;
+    margin: 10px 0;
+    transition: transform 0.2s ease-in;
+}
+.btn:hover{
+transform: translateY(-15px)
+}
+/*Main area style*/
+main{
+    display:flex;
+    flex-direction: column;
+}
+.section-first{
+    padding-bottom:2em;
+}
+.about-text{
+    padding:0 4em;
+}
+.section-first p {
+    width: 75%;
+    margin:auto;
+    text-align: center;
+}
+.section-second{
+    padding: 2em 1em 1em;
+    margin: auto;
+}
+.card{
+    margin:10px;
+    height:515px;
+    width:272px;
+}
+.card img{
+    max-width: 272px;
+    width:100%;
+}
+.card-content{
+    padding:1.5em;
+
+}
+.section-third{
+    padding:2em;
+
+}
+
+.box{
+    padding:2em;
+    flex:1;
+}
+/*Footer*/
+.footer{
+color:white;
+padding:2em;
+justify-content: space-evenly;
+background-color: black;
+
+}
+footer a{
+    color:var(--blue-color)
+}
+.showcase-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+
+100%{
+    transform: translate(0);
+}
+}
+@media(max-width:768px) {
+.flex{
+    flex-direction: column;
+    margin: 10px auto;
+}
+}
+.card{
+    width: 85%;
+}
+.card img{
+    max-width: 100%;
+   
+}
